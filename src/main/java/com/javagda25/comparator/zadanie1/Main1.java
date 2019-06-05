@@ -19,8 +19,8 @@ public class Main1 {
         osobaList.add(new Osoba("Kazik", "Kowalski", 45));
         osobaList.add(new Osoba("Bogdan", "Kot", 23));
 
-        OsobaComparator osobaComparator = new OsobaComparator();
-        Collections.sort(osobaList, osobaComparator);
+        // instancja anonimowa
+        Collections.sort(osobaList, new OsobaComparator());
 
         System.out.println(osobaList);
     }
